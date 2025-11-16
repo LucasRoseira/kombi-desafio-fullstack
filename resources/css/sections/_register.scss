@@ -1,0 +1,32 @@
+.register-section {
+margin-top: 32px;
+text-align: center;
+}
+
+
+.register-title { font-weight: 700; font-size: 36px; margin-bottom: 12px; }
+
+
+.register-form {
+max-width: 720px;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+
+.register-form .row { display: flex; flex-direction: column; gap: 12px; }
+
+
+.register-form label { font-weight: 700; font-size: 14px; }
+
+
+.checkbox-privacy { display: flex; align-items: center; gap: 8px; }
+
+
+@media (min-width: 768px) {
+.register-form .row { flex-direction: row; gap: 12px; }
+.register-form .col-2 { flex: 1; }
+}

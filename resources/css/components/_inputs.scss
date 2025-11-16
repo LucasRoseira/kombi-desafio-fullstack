@@ -1,0 +1,28 @@
+.select,
+.input-text,
+.textarea {
+width: 100%;
+max-width: 306px;
+height: 51px;
+padding: 10px 14px;
+border-radius: 10px;
+border: 1px solid #ccc;
+font-family: 'Manrope', sans-serif;
+font-size: 14px;
+}
+
+
+.select { appearance: none; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%23000' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>"); background-repeat: no-repeat; background-position: right 12px center; }
+
+
+.form-row {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+
+@media (min-width: 768px) {
+.form-row .field-half { width: calc(50% - 8px); }
+.form-row { flex-direction: row; flex-wrap: wrap; gap: 16px; }
+}
