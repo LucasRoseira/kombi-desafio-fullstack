@@ -8,7 +8,6 @@
 @import 'layout/header';
 @import 'layout/footer';
 
-
 @import 'sections/filters';
 @import 'sections/results';
 @import 'sections/reverse';
@@ -22,13 +21,11 @@
     --container-max: 1296px;
 }
 
-
 body {
     font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
     color: var(--black);
     background: #fff !important;
 }
-
 
 .container-centered {
     max-width: var(--container-max);
@@ -136,7 +133,7 @@ body {
     border-radius: 10px;
 }
 
-.custom-select{
+.custom-select, .custom-input{
   background-color: #E9E9E9;
   border: none !important;
   height: 51px !important;

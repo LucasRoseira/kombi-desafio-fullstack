@@ -1,9 +1,9 @@
-<footer id="footer" class="footer mt-5 p-4">
+<footer id="footer" class="footer mt-2 p-4">
     <div class="container">
 
         <div class="row text-center text-lg-start justify-content-between">
 
-            <div class="col-12 col-lg-6 mb-4">
+            <div class="col-12 col-lg-6 mb-2">
                 <h4 class="footer-title fw-bold mb-3">LOREM IPSUM</h4>
 
                 <div class="d-flex flex-column gap-2">
@@ -13,7 +13,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-lg-6 mb-4">
+            <div class="col-12 col-lg-6 mb-2">
                 <h4 class="footer-title fw-bold mb-3 invisible">.</h4>
 
                 <div class="d-flex flex-column gap-2">
