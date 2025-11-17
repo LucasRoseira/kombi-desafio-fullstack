@@ -1,6 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-        <a class="navbar-brand" href="#header">LOREM IPSUM</a>
+        <a class="navbar-brand logo" href="#header">
+            <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="Logo">
+        </a>
+
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
             <span class="navbar-toggler-icon"></span>

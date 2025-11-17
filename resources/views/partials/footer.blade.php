@@ -3,9 +3,9 @@
 
         <div class="footer-columns">
 
-            <div class="footer-block">
-                <h4 class="footer-title fw-bold mb-3">LOREM IPSUM</h4>
-            </div>
+            <a class="navbar-brand logo" href="#header">
+                <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="Logo">
+            </a>
 
             <div class="footer-block">
                 <div class="d-flex flex-column gap-2 text-center text-lg-start">
@@ -30,7 +30,5 @@
                 </p>
             </div>
         </div>
-
-
     </div>
 </footer>
