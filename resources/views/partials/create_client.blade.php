@@ -1,5 +1,5 @@
 <section id="cadastro-cliente" class="container mt-4 text-center">
-    <div class="tag-box mt-3">
+    <div class="btn-filter mt-3">
         <img src="{{ Vite::asset('resources/images/black_recycle_icon.png') }}" alt="">
         CADASTRAR CLIENTE
     </div>

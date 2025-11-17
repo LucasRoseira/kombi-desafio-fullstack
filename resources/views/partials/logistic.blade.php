@@ -1,5 +1,5 @@
 <section id="logistica" class="container text-center mt-2">
-    <div class="tag-box mt-3">
+    <div class="btn-filter mt-3">
         <img src="{{ Vite::asset('resources/images/black_recycle_icon.png') }}" alt="">
         LOGÍSTICA REVERSA
     </div>

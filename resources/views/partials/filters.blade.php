@@ -1,6 +1,6 @@
 <section id="filtros" class="container text-center mt-4">
  
-    <div class="tag-box">
+    <div class="btn-filter">
         <img src="{{ Vite::asset('resources/images/black_recycle_icon.png') }}" alt="">
         FILTRO LOREM IPSUM
     </div>
