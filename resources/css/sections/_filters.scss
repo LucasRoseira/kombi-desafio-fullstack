@@ -1,40 +1,42 @@
 filters-section {
-margin-top: 24px;
-text-align: center;
+    margin-top: 24px;
+    text-align: center;
 }
 
 
 .filters-title {
-font-weight: 700;
-font-size: 24px;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 
 .filters-subtitle {
-font-weight: 400;
-font-size: 16px;
-margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 16px;
 }
 
 
 .filters-row {
-display: flex;
-flex-direction: column;
-gap: 12px;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
 }
 
 
 .filters-controls {
-display: flex;
-flex-direction: column;
-gap: 12px;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
 }
 
 
 @media (min-width: 768px) {
-.filters-controls { flex-direction: row; gap: 16px; }
+.filters-controls { 
+    flex-direction: row; gap: 16px; 
+}
 }
 
 

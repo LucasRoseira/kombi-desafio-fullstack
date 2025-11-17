@@ -1,26 +1,28 @@
 .images-section {
-margin-top: 24px;
-text-align: center;
+    margin-top: 24px;
+    text-align: center;
 }
 
 
 .images-box {
-max-width: 1296px;
-margin-left: auto;
-margin-right: auto;
-padding: 12px;
+    max-width: 1296px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
 }
 
 
-.images-title { font-weight: 700; font-size: 24px; }
+.images-title { 
+    font-weight: 700; font-size: 24px; 
+}
 
 
 .images-placeholder {
-min-height: 200px;
-border: 1px dashed #ddd;
-border-radius: 8px;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 20px;
+    min-height: 200px;
+    border: 1px dashed #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }

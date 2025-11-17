@@ -1,6 +1,8 @@
 <section id="resultados" class="container mt-5 text-center">
-    <h3 class="results-title">Resultado do filtro lorem ipsum dolor sit</h3>
-
+    <div class="tag-box">
+        <img src="{{ Vite::asset('resources/images/black_recycle_icon.png') }}" alt="">
+        FILTRO LOREM IPSUM
+    </div>
 
     <div class="results-box mt-4 p-3 text-start mx-auto">
         <p class="result-line">Nome: <span>Marinalva Lopes da Silva</span></p>

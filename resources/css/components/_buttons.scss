@@ -1,65 +1,62 @@
 btn-filter,
 .btn-effect,
 .btn-sabermais {
-display: inline-flex;
-align-items: center;
-justify-content: center;
-border: 1px solid var(--black);
-background: transparent;
-color: var(--black);
-border-radius: 8px;
-cursor: pointer;
-text-transform: uppercase;
-font-family: 'Manrope', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--black);
+    background: transparent;
+    color: var(--black);
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif;
 }
 
-
-// Mobile first sizes
 .btn-filter {
-width: 100%;
-max-width: 311px; // as requested
-height: 42px;
-font-weight: 700;
-font-size: 14px;
-letter-spacing: 0;
+    width: 100%;
+    max-width: 311px;
+    height: 42px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0;
 }
 
 
-.btn-effect { // "efeito de botão" (visual)
-width: 100%;
-max-width: 311px;
-height: 42px;
-font-weight: 700;
-font-size: 14px;
+.btn-effect {
+    width: 100%;
+    max-width: 311px;
+    height: 42px;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 
 .btn-sabermais {
-width: 100%;
-max-width: 231px;
-height: 55px;
-font-weight: 700;
-font-size: 16px;
-border-radius: 8px;
+    width: 100%;
+    max-width: 231px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 8px;
 }
 
 
-// Hover behaviour
 .btn-filter:hover,
 .btn-effect:hover,
 .btn-sabermais:hover {
-background: var(--black);
-color: var(--white);
+    background: var(--black);
+    color: var(--white);
 }
 
-
-// Utility for full-width on mobile and inline on larger screens
 .btn-inline-md {
-display: block;
-width: 100%;
+    display: block;
+    width: 100%;
 }
 
 
 @media (min-width: 768px) {
-.btn-inline-md { display: inline-flex; }
+    .btn-inline-md { 
+        display: inline-flex;
+    }
 }

@@ -1,24 +1,34 @@
 .site-footer {
-margin-top: 48px;
-padding: 32px 16px;
-background: #f8f9fa;
-border-top: 1px solid #e9ecef;
+    margin-top: 48px;
+    padding: 32px 16px;
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
 }
 
 
 .footer-columns {
-display: flex;
-flex-direction: column;
-gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 
 .footer-title {
-font-weight: 700;
-font-size: 18px;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 
 @media (min-width: 768px) {
-.footer-columns { flex-direction: row; justify-content: space-between; }
+    .footer-columns { flex-direction: row; justify-content: space-between; }
+}
+
+.footer-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
