@@ -1,12 +1,12 @@
-<x-mail::message>
-# Introduction
+@component('mail::message')
+    # Olá {{ $client->name }}
 
-The body of your message.
+    Seu cadastro foi recebido com sucesso.
 
-<x-mail::button :url="''">
-Button Text
-</x-mail::button>
+    **Dados básicos**
+    - E-mail: {{ $client->email }}
+    - Telefone: {{ $client->phone ?? '—' }}
 
-Thanks,<br>
-{{ config('app.name') }}
-</x-mail::message>
+    Obrigado,<br>
+    {{ config('app.name') }}
+@endcomponent
