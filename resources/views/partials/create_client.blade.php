@@ -10,58 +10,59 @@
 
     <form class="mt-4 text-start mx-auto form-area">
         <div class="row g-3">
+
             <div class="col-md-3">
                 <label class="form-label">Nome completo</label>
-                <input type="text" class="form-control custom-input">
+                <input type="text" class="form-control custom-input" placeholder="Digite o nome completo">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">E-mail</label>
-                <input type="email" class="form-control custom-input">
+                <input type="email" class="form-control custom-input" placeholder="Digite o e-mail">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Telefone</label>
-                <input type="text" class="form-control custom-input">
+                <input type="text" class="form-control custom-input" placeholder="Digite seu número de telefone">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">CNPJ da empresa</label>
-                <input type="text" class="form-control custom-input">
+                <input type="text" class="form-control custom-input" placeholder="Digite o CNPJ da empresa">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">CEP</label>
-                <input type="text" class="form-control custom-input">
+                <input type="text" class="form-control custom-input" placeholder="Digite o CEP da empresa">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Estado</label>
                 <select class="form-select custom-select">
-                    <option>Selecione o estado</option>
+                    <option selected disabled>Selecione o estado</option>
                 </select>
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Cidade</label>
                 <select class="form-select custom-select">
-                    <option>Selecione a cidade</option>
+                    <option selected disabled>Selecione a cidade</option>
                 </select>
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Logradouro</label>
-                <input type="text" class="form-control custom-input">
+                <input type="text" class="form-control custom-input" placeholder="Digite o nome da rua">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Número</label>
-                <input type="text" class="form-control custom-input">
+                <input type="text" class="form-control custom-input" placeholder="Digite o número">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Complemento</label>
-                <input type="text" class="form-control custom-input">
+                <input type="text" class="form-control custom-input" placeholder="Digite o complemento, se houver">
             </div>
 
             <div class="col-md-3 d-flex align-items-center justify-content-start mt-5">
