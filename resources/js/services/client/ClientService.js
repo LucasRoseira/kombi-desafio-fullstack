@@ -16,7 +16,6 @@ export default class ClientService {
         }
     }
 
-
     async getStates() {
         const response = await fetch('/api/clients/states', {
             headers: { 'Accept': 'application/json' },

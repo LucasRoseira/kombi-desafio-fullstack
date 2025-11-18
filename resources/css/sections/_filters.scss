@@ -17,27 +17,45 @@ filters-section {
 .filters-row {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    align-items: center;
-}
-
-.filters-controls {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     align-items: center;
 }
 
 @media (min-width: 768px) {
-    .filters-controls { 
-        flex-direction: row; gap: 16px; 
+    .filters-row {
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        gap: 16px;
     }
 }
 
-.select, .input-text {
-     max-width: 306px; 
+.dropdown-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 306px;
 }
 
-.btn-area { 
-    margin-top: 8px; 
+.dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1000;
+    display: none;
+}
+
+.dropdown-item {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: #007bff;
+    color: white;
 }
