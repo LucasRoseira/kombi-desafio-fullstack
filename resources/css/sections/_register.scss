@@ -36,3 +36,19 @@
         flex: 1;
     }
 }
+
+.custom-check {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #E9E9E9;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: 2px solid #ccc;
+}
+
+.custom-check:checked {
+    background-color: #7fa7ad;
+    border-color: #7fa7ad;
+}

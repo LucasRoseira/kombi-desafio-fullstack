@@ -64,12 +64,11 @@
                 <input type="text" class="form-control custom-input">
             </div>
 
-            <div class="col-md-3 d-flex align-items-center justify-content-start mt-4">
-                <input type="checkbox" class="me-2">
-                <label class="me-2">Estou de acordo</label>
+            <div class="col-md-3 d-flex align-items-center justify-content-start mt-5">
+                <input type="checkbox" class="custom-check me-2">
+                <label>Estou de acordo</label>
             </div>
 
-            <!-- BOTÃO -->
             <div class="col-md-3 d-flex align-items-center justify-content-start mt-4">
                 <button class="btn-dark btn-custom">
                     <img src="{{ Vite::asset('resources/images/arrow_right.png') }}" alt="">
