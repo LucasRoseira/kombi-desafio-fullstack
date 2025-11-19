@@ -14,15 +14,14 @@ return new class extends Migration {
 
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('phone')->nullable();
+            $table->string('phone');
             $table->string('cpf')->nullable();
-            $table->string('cnpj')->nullable();
-
-            $table->string('cep')->nullable();
-            $table->string('state')->nullable();
-            $table->string('city')->nullable();
-            $table->string('street')->nullable();
-            $table->string('number')->nullable();
+            $table->string('cnpj')->unique();
+            $table->string('cep');
+            $table->string('state');
+            $table->string('city');
+            $table->string('street');
+            $table->string('number');
             $table->string('complement')->nullable();
 
             $table->boolean('agreed')->default(false);

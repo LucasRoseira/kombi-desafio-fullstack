@@ -13,14 +13,14 @@ class StoreClientRequest extends FormRequest
         return [
             'name' => 'required|string|max:255',
             'email' => ['required','email','max:255', Rule::unique('clients','email')],
-            'phone' => ['nullable','string','max:20'],
+            'phone' => ['required','string','max:20'],
             'cpf' => ['nullable','string','max:14','unique:clients,cpf', new \App\Rules\Cpf],
-            'cnpj' => ['nullable','string','max:18','unique:clients,cnpj', new \App\Rules\Cnpj],
-            'cep' => ['nullable','string','max:10'],
-            'state_id' => ['nullable','integer','exists:states,id'],
-            'city_id' => ['nullable','integer','exists:cities,id'],
-            'street' => 'nullable|string|max:255',
-            'number' => 'nullable|string|max:50',
+            'cnpj' => ['required','string','max:18','unique:clients,cnpj', new \App\Rules\Cnpj],
+            'cep' => ['required','string','max:10'],
+            'state' => ['required','string','max:100'],
+            'city' => ['required','string','max:100'],
+            'street' => 'required|string|max:255',
+            'number' => 'required|string|max:50',
             'complement' => 'nullable|string|max:255',
             'agreed' => 'required|boolean'
         ];

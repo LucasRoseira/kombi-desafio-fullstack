@@ -13,19 +13,19 @@
     <div class="filters-row">
         <div class="dropdown-wrapper col-12 col-md-2 text-start">
             <label class="form-label">Estado</label>
-            <input type="text" class="form-control custom-input" placeholder="Digite o estado..." />
+            <input type="text" class="form-control custom-input" placeholder="Digite o estado" />
             <div class="dropdown-options"></div>
         </div>
 
         <div class="dropdown-wrapper col-12 col-md-2 text-start">
             <label class="form-label">Cidade</label>
-            <input type="text" class="form-control custom-input city-input" placeholder="Digite a cidade...">
+            <input type="text" class="form-control custom-input city-input" placeholder="Digite a cidade">
             <div class="dropdown-options city-dropdown"></div>
         </div>
 
         <div class="dropdown-wrapper col-12 col-md-3 text-start">
             <label class="form-label">Nome do fornecedor</label>
-            <input type="text" class="form-control custom-input supplier-input" placeholder="Digite o fornecedor...">
+            <input type="text" class="form-control custom-input supplier-input" placeholder="Digite o fornecedor">
             <div class="dropdown-options supplier-dropdown"></div>
         </div>
 
