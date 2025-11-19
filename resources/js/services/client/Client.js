@@ -173,4 +173,6 @@ export default function initClients() {
             showPopupMessage('Erro: ' + (err.message || 'Não foi possível cadastrar o cliente.'));
         }
     });
+
+    initialize();
 }
