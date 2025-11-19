@@ -8,70 +8,75 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula
     </h2>
 
-    <form class="mt-4 text-start mx-auto form-area">
+    <form class="mt-4 text-start mx-auto form-area" id="form-client">
         <div class="row g-3">
 
             <div class="col-md-3">
                 <label class="form-label">Nome completo</label>
-                <input type="text" class="form-control custom-input" placeholder="Digite o nome completo">
+                <input type="text" id="create-name" class="form-control custom-input"
+                    placeholder="Digite o nome completo">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">E-mail</label>
-                <input type="email" class="form-control custom-input" placeholder="Digite o e-mail">
+                <input type="email" id="create-email" class="form-control custom-input" placeholder="Digite o e-mail">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Telefone</label>
-                <input type="text" class="form-control custom-input" placeholder="Digite seu número de telefone">
+                <input type="text" id="create-phone" class="form-control custom-input"
+                    placeholder="Digite seu número de telefone">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">CNPJ da empresa</label>
-                <input type="text" class="form-control custom-input" placeholder="Digite o CNPJ da empresa">
+                <input type="text" id="create-cnpj" class="form-control custom-input"
+                    placeholder="Digite o CNPJ da empresa">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">CEP</label>
-                <input type="text" class="form-control custom-input" placeholder="Digite o CEP da empresa">
+                <input type="text" id="create-cep" class="form-control custom-input"
+                    placeholder="Digite o CEP da empresa">
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 dropdown-wrapper ">
                 <label class="form-label">Estado</label>
-                <select class="form-select custom-select">
-                    <option selected disabled>Selecione o estado</option>
-                </select>
+                <input type="text" id="create-state" class="form-control custom-input"
+                    placeholder="Selecione o estado">
+                <div id="create-state-dropdown" class="dropdown-options"></div>
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Cidade</label>
-                <select class="form-select custom-select">
-                    <option selected disabled>Selecione a cidade</option>
-                </select>
+                <input type="text" id="create-city" class="form-control custom-input" placeholder="Digite a cidade">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Logradouro</label>
-                <input type="text" class="form-control custom-input" placeholder="Digite o nome da rua">
+                <input type="text" id="create-street" class="form-control custom-input"
+                    placeholder="Digite o nome da rua">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Número</label>
-                <input type="text" class="form-control custom-input" placeholder="Digite o número">
+                <input type="text" id="create-number" class="form-control custom-input"
+                    placeholder="Digite o número">
             </div>
 
             <div class="col-md-3">
                 <label class="form-label">Complemento</label>
-                <input type="text" class="form-control custom-input" placeholder="Digite o complemento, se houver">
+                <input type="text" id="create-neighborhood" class="form-control custom-input"
+                    placeholder="Digite o complemento, se houver">
             </div>
 
             <div class="col-md-3 d-flex align-items-center justify-content-start mt-5">
-                <input type="checkbox" class="custom-check me-2">
-                <label>Estou de acordo</label>
+                <input type="checkbox" id="create-agree" class="custom-check me-2">
+                <label for="create-agree">Estou de acordo</label>
             </div>
 
             <div class="col-md-3 d-flex align-items-center justify-content-start mt-4">
-                <button class="btn-dark btn-custom">
+                <button class="btn-dark btn-custom" id="btn-create">
                     <img src="{{ Vite::asset('resources/images/arrow_right.png') }}" alt="">
                     CADASTRAR
                 </button>
@@ -79,4 +84,11 @@
 
         </div>
     </form>
+    <div id="popup-message" class="popup-message">
+        <div class="popup-content">
+            <span id="popup-close" class="popup-close">&times;</span>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
 </section>

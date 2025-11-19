@@ -1,6 +1,7 @@
-import ClientService from './ClientService';
+import ClientService from './ClientService.js';
 import { setupDropdown, hideAllDropdowns } from './Dropdown.js';
 import { createPaginationContainer, renderPagination } from './Pagination.js';
+import { showPopupMessage, initPopupMessage } from './PopupMessage.js';
 
 export default function initClients() {
     const resultsWrapper = document.querySelector('.results-wrapper');
@@ -23,7 +24,12 @@ export default function initClients() {
     const supplierDropdown = document.querySelector('.supplier-dropdown');
 
     const filterBtn = document.querySelector('.btn-filtrar');
+    
+    const createForm = document.querySelector('#form-client');
+    const createButton = createForm.querySelector('#btn-create');
 
+    initPopupMessage();
+    
     let allStates = [];
     let allCities = [];
 
@@ -132,12 +138,39 @@ export default function initClients() {
         await renderResults(currentPage, true);
     }
 
-    initialize();
+    
+    createButton.addEventListener('click', async (e) => {
+        e.preventDefault();
 
+        const name = document.querySelector('#create-name').value.trim();
+        const email = document.querySelector('#create-email').value.trim();
+        const phone = document.querySelector('#create-phone').value.trim();
+        const cnpj = document.querySelector('#create-cnpj').value.trim();
+        const cep = document.querySelector('#create-cep').value.trim();
+        const state = document.querySelector('#create-state').value.trim();
+        const city = document.querySelector('#create-city').value.trim();
+        const street = document.querySelector('#create-street').value.trim();
+        const number = document.querySelector('#create-number').value.trim();
+        const neighborhood = document.querySelector('#create-neighborhood').value.trim();
+        const agree = document.querySelector('#create-agree').checked;
 
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.dropdown-wrapper')) {
-            hideAllDropdowns();
+        if (!name || !email || !phone || !cnpj || !cep || !state || !city || !street || !number) {
+            return showPopupMessage('Por favor, preencha todos os campos obrigatórios.');
+        }
+
+        if (!agree) {
+            return showPopupMessage('Você precisa aceitar os termos para prosseguir.');
+        }
+
+        const clientData = { name, email, phone, cnpj, cep, state, city, street, number, neighborhood, agree };
+
+        try {
+            const data = await clientService.createClient(clientData);
+            showPopupMessage(data.message || 'Cliente cadastrado com sucesso!');
+            createForm.reset();
+            await renderResults(currentPage);
+        } catch (err) {
+            showPopupMessage('Erro: ' + (err.message || 'Não foi possível cadastrar o cliente.'));
         }
     });
 }

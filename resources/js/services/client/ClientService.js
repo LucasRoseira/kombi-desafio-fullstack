@@ -48,4 +48,26 @@ export default class ClientService {
         if (!response.ok) return [];
         return await response.json();
     }
+
+    async createClient(clientData) {
+        try {
+            const response = await fetch(this.baseUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(clientData)
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'Erro ao cadastrar cliente');
+            }
+
+            return await response.json();
+        } catch (err) {
+            throw err;
+        }
+    }
 }

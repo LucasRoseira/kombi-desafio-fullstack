@@ -7,7 +7,7 @@ class Client extends Model
 {
     protected $fillable = [
         'name','email','phone','cpf','cnpj','cep',
-        'state_id','city_id','street','number','complement','agreed'
+        'state','city','street','number','complement','agreed'
     ];
 
     protected $casts = [
