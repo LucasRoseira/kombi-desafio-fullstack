@@ -124,11 +124,42 @@ body {
     padding-right: 16px;
 }
 
-.custom-select, .custom-input{
-  background-color: #E9E9E9;
-  border: none !important;
-  height: 51px !important;
-  max-width: 290px;
+
+.custom-select,
+.custom-input {
+    background-color: #E9E9E9;
+    border: none !important;
+    height: 51px !important;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    .custom-select,
+    .custom-input {
+        max-width: 240px;
+    }
+}
+
+@media (min-width: 768px) {
+    .custom-select,
+    .custom-input {
+        max-width: 260px;
+    }
+}
+
+@media (min-width: 992px) {
+    .custom-select,
+    .custom-input {
+        max-width: 290px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .custom-select,
+    .custom-input {
+        max-width: 290px;
+    }
 }
 
 
