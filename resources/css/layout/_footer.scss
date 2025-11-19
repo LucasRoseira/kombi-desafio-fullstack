@@ -52,16 +52,17 @@
 @media (max-width: 700px) {
     .footer {
         background-position: center -20px, center top;
-        background-size: 200% auto, cover;
+        background-size: 200% auto, cover; 
         min-height: 120px;
     }
 }
 
 @media (min-width: 700px) and (max-width: 1600px) {
     .footer {
-        background-position: center -100px, center top;
-        background-size: 120% auto, cover;
-        min-height: 160px;
+        background-position: center -140px, center top;
+        background-size: 100% auto, cover; 
+        min-height: 250px;
+
     }
 }
 
@@ -70,6 +71,7 @@
         background-position: center -130px, center top;
         background-size: cover, cover;
         min-height: 160px;
+
     }
 }
 
@@ -78,6 +80,7 @@
         background-position: center -140px, center top;
         background-size: cover, cover;
         min-height: 180px;
+
     }
 }
 
@@ -122,9 +125,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-
     padding: 8px 20px;
-
     border: 1px solid #000;
     border-radius: 27.5px;
 

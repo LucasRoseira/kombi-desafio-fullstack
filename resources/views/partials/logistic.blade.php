@@ -16,7 +16,6 @@
         </p>
     </div>
 
-
     <button class="btn-dark btn-custom mt-4">
         <img src="{{ Vite::asset('resources/images/arrow_right.png') }}" alt="">
         SABER MAIS

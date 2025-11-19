@@ -124,7 +124,6 @@ body {
     padding-right: 16px;
 }
 
-
 .custom-select,
 .custom-input {
     background-color: #E9E9E9;
@@ -162,4 +161,10 @@ body {
     }
 }
 
+.navbar-nav a {
+  color: #000000 !important;
+}
 
+.form-label{
+    font-weight: 700 !important;
+}
