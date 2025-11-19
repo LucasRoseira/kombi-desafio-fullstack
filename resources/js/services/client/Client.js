@@ -98,7 +98,7 @@ export default function initClients() {
         resultsWrapper.innerHTML = '';
         clients.forEach(client => {
             const box = document.createElement('div');
-            box.className = 'results-box mt-4 p-3 text-start';
+            box.className = 'results-box mt-2 mt-md-4 mt-lg-5 p-3 text-start';
             box.innerHTML = `
                 <p><strong>Nome:</strong> ${client.name}</p>
                 <p><strong>Estado:</strong> ${client.state}</p>
