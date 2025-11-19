@@ -24,11 +24,17 @@
             </div>
 
             <div class="social-box text-center">
-                <p class="fw-bold">
-                    <a href="#" class="footer-link">Instagram</a> ·
-                    <a href="#" class="footer-link">Facebook</a>
-                </p>
+                <a href="#" class="social-btn">
+                    <img src="{{ Vite::asset('resources/images/instagram.png') }}" alt="Instagram">
+                    Instagram
+                </a>
+
+                <a href="#" class="social-btn">
+                    <img src="{{ Vite::asset('resources/images/facebook.png') }}" alt="Facebook">
+                    Facebook
+                </a>
             </div>
+
         </div>
     </div>
 </footer>
