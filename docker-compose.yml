@@ -12,7 +12,7 @@ services:
       db:
         condition: service_healthy
     environment:
-      DB_HOST: laravel_db
+      DB_HOST: db
       DB_DATABASE: laravel
       DB_USERNAME: laravel
       DB_PASSWORD: secret
@@ -46,7 +46,7 @@ services:
 
   db:
     image: mysql:8.0
-    container_name: laravel_db
+    container_name: db
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: laravel

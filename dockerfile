@@ -13,12 +13,7 @@ COPY . .
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 COPY docker/wait-for-mysql.sh /usr/local/bin/wait-for-mysql.sh
 
+RUN chmod +x /usr/local/bin/entrypoint.sh \
+    && chmod +x /usr/local/bin/wait-for-mysql.sh
+
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
-
-COPY --from=composer:2.6 /usr/bin/composer /usr/bin/composer
-
-RUN composer install --no-dev --optimize-autoloader --no-interaction
-
-RUN chown -R www-data:www-data /var/www \
-    && chmod -R 755 /var/www/storage \
-    && chmod -R 755 /var/www/bootstrap/cache

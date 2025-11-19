@@ -9,6 +9,9 @@ if [ ! -f /var/www/.env ]; then
     cp /var/www/.env.example /var/www/.env
 fi
 
+echo "📦 Instalando dependências PHP"
+composer install --no-dev --optimize-autoloader --no-interaction
+
 echo "🔎 Esperando o MySQL..."
 wait-for-mysql.sh
 
