@@ -21,7 +21,28 @@ filters-section {
     align-items: center;
 }
 
-@media (min-width: 768px) {
+.dropdown-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 326px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .filters-row {
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        gap: 10px;
+    }
+
+    .dropdown-wrapper {
+        max-width: 200px !important;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1025px) {
     .filters-row {
         flex-direction: row;
         justify-content: center;
@@ -30,11 +51,8 @@ filters-section {
     }
 }
 
-.dropdown-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 326px;
-}
+
+
 
 .dropdown-options {
     position: absolute;

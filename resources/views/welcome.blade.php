@@ -15,11 +15,8 @@
             @include('partials.filters')
         </section>
         @include('partials.results')
-        <section id="logistica">
+        <section>
             @include('partials.logistic')
-        </section>
-        <section id="galeria">
-            @include('partials.gallery')
         </section>
         <section id="create-client">
             @include('partials.create_client')
