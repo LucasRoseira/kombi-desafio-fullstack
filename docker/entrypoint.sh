@@ -9,12 +9,14 @@ if [ ! -f /var/www/.env ]; then
     cp /var/www/.env.example /var/www/.env
 fi
 
+
+echo "📦 Instalando dependências PHP"
+composer install --optimize-autoloader --no-interaction
+
 echo "🔑 Gerando APP_KEY"
 php artisan key:generate --ansi
 
 
-echo "📦 Instalando dependências PHP"
-composer install --optimize-autoloader --no-interaction
 
 echo "🔐 Ajustando permissões..."
 chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
