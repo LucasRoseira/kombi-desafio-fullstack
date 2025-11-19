@@ -8,6 +8,8 @@ RUN docker-php-ext-install pdo pdo_mysql
 
 WORKDIR /var/www
 
+COPY --from=composer:2.6 /usr/bin/composer /usr/bin/composer
+
 COPY . .
 
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
