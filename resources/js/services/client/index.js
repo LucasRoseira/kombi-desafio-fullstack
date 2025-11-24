@@ -12,7 +12,7 @@ export default function initClients() {
     const clientService = new ClientService();
     let currentPage = 1;
     const perPage = 5;
-    const filters = { state: '', city: '', supplier: '' };
+    const filters = { state: '', city: '', name: '' };
 
     const stateInput = document.querySelector('.dropdown-wrapper input');
     const stateDropdown = document.querySelector('.dropdown-wrapper .dropdown-options');
@@ -35,7 +35,7 @@ export default function initClients() {
 
     function clearCityAndSupplier() {
         filters.city = '';
-        filters.supplier = '';
+        filters.name = '';
         cityInput.value = '';
         supplierInput.value = '';
         cityDropdown.innerHTML = '';
@@ -43,7 +43,7 @@ export default function initClients() {
     }
 
     function clearSupplier() {
-        filters.supplier = '';
+        filters.name = '';
         supplierInput.value = '';
         supplierDropdown.innerHTML = '';
     }
@@ -90,7 +90,7 @@ export default function initClients() {
 
         const suppliers = await clientService.getSuppliersName({ state, city });
         setupDropdown(supplierInput, supplierDropdown, suppliers, () => {
-            filters.supplier = supplierInput.value;
+            filters.name = supplierInput.value;
         });
     }
 
@@ -120,14 +120,18 @@ export default function initClients() {
                 renderResults(p);
             }, response.prev_page_url, response.next_page_url);
 
-            const noFiltersApplied = !filters.state && !filters.city && (!filters.supplier || filters.supplier === 'Selecione...');
+            const noFiltersApplied = !filters.state && !filters.city && (!filters.name || filters.name === 'Selecione...');
             resultTitle.textContent = firstLoad || noFiltersApplied ? 'Todos os fornecedores' : 'Resultado do Filtro';
         } catch (err) {
             console.error('Erro ao carregar resultados:', err);
         }
-    }
+    }   
 
     filterBtn.addEventListener('click', async () => {
+        filters.state = stateInput.value.trim() || '';
+        filters.city = cityInput.value.trim() || '';
+        filters.name = supplierInput.value.trim() || '';
+
         currentPage = 1;
         await renderResults(currentPage);
     });
